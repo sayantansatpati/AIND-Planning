@@ -209,8 +209,6 @@ class AirCargoProblem(Problem):
         # TODO implement (see Russell-Norvig Ed-3 10.2.3  or Russell-Norvig Ed-2 11.2)
         # requires implemented PlanningGraph class
         fs = decode_state(node.state, self.state_map)
-        print("# Fluent State", fs.pos)
-        print("# Goal State", self.goal)
         cnt = 0
         for goal in self.goal:
             if goal not in fs.pos:

@@ -406,7 +406,6 @@ class PlanningGraph():
         # TODO test for Inconsistent Effects between nodes
         return bool(
             set(node_a1.action.effect_add) & set(node_a2.action.effect_rem) |
-
             set(node_a2.action.effect_add) & set(node_a1.action.effect_rem)
         )
 
